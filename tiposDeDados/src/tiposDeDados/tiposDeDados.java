@@ -6,7 +6,7 @@ import java.util.concurrent.ForkJoinPool;
 import javax.swing.JOptionPane;
 
 public class TipoDadosPrincipal {
-
+//rever
 	public static void main(String[] args) throws ParseException {
 		
 		String nome;
