@@ -17,7 +17,7 @@ public class comandosCondicionais {
 			System.out.println("Maior de idade");
 		}
 		
-		//Comando condicional composto com "else"
+		//Comando condicional composto com "else if"
 		if (idade < 18) {
 			System.out.println("Menor de idade");
 		} else if (idade <= 64) {
