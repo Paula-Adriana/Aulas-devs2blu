@@ -18,23 +18,24 @@ public class EscolaFuturo {
 
 		Scanner entrada = new Scanner(System.in);
 		String situacao, nome;
+		int quantidadeNotas, quantidadeAlunos;
 		double somaNota = 0, media = 0, mediaTurma = 0, melhorMedia = 0;
-		int[] numeroNotas = new int[10];
+		int numeroNotas = 0;
 
 		System.out.print("Informe a quantidade de alunos: ");
-		int quantidadeAlunos = entrada.nextInt();
+		quantidadeAlunos = entrada.nextInt();
 
 		for (int i = 1; i <= quantidadeAlunos; i++) {
 			System.out.print("Informe o nome do aluno: ");
 			nome = entrada.next();
 			
 			System.out.print("Informe a quantidade de notas: ");
-			int quantidadeNotas = entrada.nextInt();
+			quantidadeNotas = entrada.nextInt();
 
 			for (int j = 0; j < quantidadeNotas; j++) {
 				System.out.print("Informe a " + (j + 1) + "ª nota: ");
-				numeroNotas[j] = entrada.nextInt();
-				somaNota += numeroNotas[j];
+				numeroNotas = entrada.nextInt();
+				somaNota += numeroNotas;
 			}
 			media = somaNota / quantidadeNotas;
 			mediaTurma += media / quantidadeAlunos;
