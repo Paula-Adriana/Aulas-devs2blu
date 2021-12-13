@@ -24,28 +24,28 @@ public class EscolaFuturo {
 
 		System.out.print("Informe a quantidade de alunos: ");
 		quantidadeAlunos = entrada.nextInt();
-
+		System.out.print("Informe a quantidade de notas: ");
+		quantidadeNotas = entrada.nextInt();
+		
 		for (int i = 1; i <= quantidadeAlunos; i++) {
-			System.out.print("Informe o nome do aluno: ");
+			System.out.print("Informe o nome do " + i + "º aluno: ");
 			nome = entrada.next();
 			
-			System.out.print("Informe a quantidade de notas: ");
-			quantidadeNotas = entrada.nextInt();
-
 			for (int j = 0; j < quantidadeNotas; j++) {
 				System.out.print("Informe a " + (j + 1) + "ª nota: ");
 				numeroNotas = entrada.nextInt();
 				somaNota += numeroNotas;
 			}
+			
 			media = somaNota / quantidadeNotas;
 			mediaTurma += media / quantidadeAlunos;
 
 			if (media < 6) {
 				situacao = "Reprovado!";
 			} else if (media < 7.5) {
-				situacao ="Em recuperação!";
+				situacao = "Em recuperação!";
 			} else {
-				situacao ="Aprovado!";
+				situacao = "Aprovado!";
 			}
 			if (media > melhorMedia) {
 				melhorMedia = media;
@@ -60,8 +60,8 @@ public class EscolaFuturo {
 			media = 0;
 			somaNota = 0;
 		}
-		System.out.printf("A melhor média da turma foi: " + melhorMedia + ""
-				+ " e a média geral foi: %.2f",mediaTurma);
+		System.out.printf("A melhor média da turma foi: %.2f e a "
+				+ "média geral foi: %.2f", melhorMedia, mediaTurma);
 		
 		entrada.close();
 	}

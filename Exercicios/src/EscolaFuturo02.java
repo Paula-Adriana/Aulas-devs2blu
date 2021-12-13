@@ -18,7 +18,7 @@ public class EscolaFuturo02 {
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 		int contaNotas = 0, contaAluno = 0, quantidadeAluno, quantidadeNotas;
-		double notas = 0, mediaAluno = 0, mediaTurma = 0, melhorMedia = 0, somaNotas = 0;
+		double notas, mediaAluno, mediaTurma = 0, melhorMedia = 0, somaNotas = 0;
 		String nome, situacao;
 
 		System.out.print("Digite o número de alunos: ");
