@@ -83,7 +83,8 @@ public class Aluno {
 
 	// Incluir
 	public boolean incluirAluno() {
-		String sql = "insert into aluno (nomeAluno, nomeMae, nomePai, dataNascimento) values(?,?,?,?)";
+		String sql = "insert into aluno (nomeAluno, nomeMae, "
+				+ "nomePai, dataNascimento) values(?,?,?,?)";
 		try {
 			PreparedStatement stm = Conexao.conectar().prepareStatement(sql);
 			stm.setString(1, this.nomeAluno);
