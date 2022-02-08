@@ -1,11 +1,12 @@
-package br.com.devs.util;
+package br.com.devs.escola.uteis;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+
 public class Conexao {
-	
+
 	static final String url = "jdbc:mysql://localhost:3306/escola";
 	static final String user = "root";
 	static final String password = "admin";
@@ -22,4 +23,3 @@ public class Conexao {
 		return con;
 	}
 }
-
