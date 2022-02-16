@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 5px;
+}
+
+.corpo {
+    background-color: rgb(219, 219, 216);
+    border: 2px solid #111;
+}
+
+header {
+    background-color: rgb(245, 225, 200);
+    margin-bottom: 2px, solid #111;
+    border-bottom: 2px solid #111;
+}
+
+.imagem-logo {
+    width: 80px;
+    padding: 5px;
+}
+
+.imagem-arvore {
+    border: 2px solid #111;
+    width: 200px;
+    margin-right: 10px;
+
+}
+
+.imagem-legenda {
+    display: flex;
+    margin: 10px;
+}
+
+.texto {
+    border: 2px solid #111;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
