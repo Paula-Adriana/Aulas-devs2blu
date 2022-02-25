@@ -1,11 +1,15 @@
 :root{
-    --cor-fundo: rgb(197, 118, 138);
-    --borda: 3px solid #111;
+    --cor-fundo: rgb(230, 140, 162);
+    --borda: 2px solid #111;
 }
 
 html, body, ul, li {
     margin: 0;
     padding: 0;
+}
+
+body {
+    padding: 5px;
 }
 
 ul {
@@ -23,7 +27,7 @@ h1 {
 }
 .corpo {
     border: var(--borda);
-     background-color: rgb(172, 171, 171);
+     background-color: rgb(232, 222, 238);
 }
 
 .imagem-logo {
@@ -31,7 +35,7 @@ h1 {
     width: 150px;
     margin: 5px 30px 5px 5px;
     padding: 5px;
-    background-color: rgb(187, 163, 211);
+    background-color: rgb(179, 226, 117);
     float: left;
     
 }

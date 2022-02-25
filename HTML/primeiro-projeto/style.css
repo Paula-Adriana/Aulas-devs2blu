@@ -4,20 +4,35 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: rgba(238, 226, 211, .6);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 
-/* Header */
 header {
     position: relative;
     height: auto;
-    /* padding Top/bottom 10 - right/left 30*/
-    padding: 10px 30px; 
+    padding: 10px 0; 
+}
+
+#topo-site-menu {
+    border-bottom: 2px solid #111;
+    width: 100vw;
+}
+
+#topo-site-menu:after {
+    display: block;
+    clear: both;
+    content: "";
 }
 
 #logo {
     display: block;
-    border-bottom: 2px solid #111;
     height: 80px;
     line-height: 80px;
+    width: 50%;
+    float: left;
 }
 
 #logo:after {
@@ -37,3 +52,89 @@ header {
     display: block;
     float: left;
 }
+
+/* Menu */
+#menu-horizontal {
+    display: block;
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    width: 40%;
+}
+#menu-horizontal ul li {
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+}
+
+#menu-horizontal ul li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: rgb(90, 67, 5);
+}
+
+#menu-horizontal ul li a:hover {
+    background-color: rgb(158, 158, 157);
+    color: #fff;
+    font-size: 24px;
+    transition: all .5s;
+}
+
+#topo-destaque {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    background: url('./_img/header.jpg');
+    background-position: 50% 70%;
+    color: white;
+}
+
+.wrapper {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topo-destaque-content {
+    font-weight: 800;
+}
+
+#art-destaque {
+    padding: 2em;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .4);
+
+}
+
+#art-destaque h1 {
+    font-size: 60px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#art-destaque p {
+    font-size: 30px;
+    color: black;
+}
+
+#art-destaque .texto-destaque {
+    font-size: 33px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+main {
+    min-height: 40vw;
+}
+
+footer {
+    background-color: rgb(118, 231, 231);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+

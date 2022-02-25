@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiro site</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- atalho: ctrl+; -->
     <!-- Header -->
     <header>
         <!-- Topo -->
-        <figure id="logo">  
-            <img class="logo-topo" src= "_img/sunflower.png" alt="Logo Topo">
-            <h1 class= "texto_topo">Meu primeiro Site</h1>
-        </figure>
-       
+        <div id="topo-site-menu">
+            <figure id="logo">
+                <img class="logo-topo" src="_img/sunflower.png" alt="Logo Topo">
+                <h1 class="texto_topo">Meu primeiro Site</h1>
+            </figure>
+            <!-- Menu -->
+            <nav id="menu-horizontal">
+                <ul>
+                    <li><a href="index.html">
+                            Home
+                        </a></li>
+                    <li><a href="galeria.html">
+                            Galeria
+                        </a></li>
+                    </a></li>
+                    <li><a href="contato.html">
+                            Contato
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Topo site Destaque -->
+        <section id="topo-destaque">
+            <div class="wrapper">
+                <div class="topo-destaque-content">
+                    <div id="art-destaque">
+                        <h1>Lorem Ipsum!</h1>
+                        <p>Texto Destaque.
+                            <span class="texto-destaque">
+                                Valor R$ 500,00.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
+
+    <!-- Conteudo principal -->
+    <main class="wrapper">
+        <div id="lista-servicos">
+            <h1>Lista</h1>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
 </body>
+
 </html>

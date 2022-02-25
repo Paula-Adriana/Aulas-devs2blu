@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.cabecalho {
+    background-color: rgb(197, 184, 197);
+    font-weight: bold;
+}
+
+.nav-link{
+    color: #0a0a0a;
+}
+
+footer {
+    background-color: rgb(197, 184, 197);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.caixa-imagem {
+    height: 55vw;
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    max-height: 300px;
+    margin: 10px;
+}
+
+/* Imagem de fundo - aba home */
+.img-fluid {
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.redes-sociais a {
+    width: 120px;
+    color: #0a0a0a;
+}
+
+/* Aba sobre */
+.texto {
+    border: 1px solid black;
+    margin: 30px;
+}
